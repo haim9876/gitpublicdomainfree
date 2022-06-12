@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
+		<title>Education</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 <body>
 
 <div id="demo">
-	<h1>Ajax</h1>
-	<button type="button" onclick="loadJson()">Send Ajax</button>
-	<button type="button" onclick="clearAction()">clear</button>
+	<button type="button" onclick="loadJson()">Get Data</button>
+	<button type="button" onclick="clearAction()">Clear</button>
 	<br />
 	<p id="school"></p>
 	<p id="program"></p>
@@ -17,11 +17,12 @@
 </div>
 
 <script>
-	function loadJson() {
+	function loadJson(){
 		let response = fetch("./test.json")
 		.then(response => {
 			console.log(response);
-			if(response.status == 200) {
+			if(response.status == 200)
+			{
 				return response.json();
 			}
 		})
@@ -34,13 +35,12 @@
 		});
 	}
 
-	function clearAction() {
+	function clearAction(){
 		document.getElementById("school").innerHTML = "";
 		document.getElementById("program").innerHTML = "";
 		document.getElementById("type").innerHTML = "";
 		document.getElementById("year").innerHTML = "";
 	}
 </script>
-
 </body>
 </html>
