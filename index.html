@@ -8,6 +8,7 @@
 <div id="demo">
 	<h1>Ajax</h1>
 	<button type="button" onclick="loadJson()">Send Ajax</button>
+	<button type="button" onclick="clearAction()">clear</button>
 	<br />
 	<p id="school"></p>
 	<p id="program"></p>
@@ -31,6 +32,13 @@
 			document.getElementById("type").innerHTML = "Type : " + jsondata["Type"];
 			document.getElementById("year").innerHTML = "Year : " + jsondata["Year"];
 		});
+	}
+
+	function clearAction() {
+		document.getElementById("school").innerHTML = "";
+		document.getElementById("program").innerHTML = "";
+		document.getElementById("type").innerHTML = "";
+		document.getElementById("year").innerHTML = "";
 	}
 </script>
 
