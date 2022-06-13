@@ -9,16 +9,15 @@ button {
   font-size: 16px;
 }
 
+#demo{
+  margin: 25px auto;
+  padding: 2rem;
+}
+
 button:hover,
 button:active {
   background: lightgreen;
   border-color: lightgreen;
-}
-
-#control-center {
-  /* border: 2px solid #ccc; */
-  margin: 25px auto;
-  padding: 2rem;
 }
 
 p {
