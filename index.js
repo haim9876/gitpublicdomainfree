@@ -1,7 +1,7 @@
 var count = 0;
 
 function loadJson(){
-    let response = fetch("./test.json")
+    let response = fetch("test.json")
     .then(response => {
         console.log(response);
         if(response.status == 200)
