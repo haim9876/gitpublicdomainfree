@@ -10,7 +10,7 @@ button {
 }
 
 #demo{
-  margin: 25px auto;
+  /*margin: 25px auto;*/
   padding: 2rem;
   justify-content: center;
 }
