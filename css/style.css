@@ -11,7 +11,8 @@ button {
 
 #demo{
   margin: 25px auto;
-  padding: 2rem;
+  /*padding: 2rem;*/
+  padding: 12px 15px;
 }
 
 button:hover,
