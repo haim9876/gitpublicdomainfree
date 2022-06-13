@@ -18,6 +18,7 @@ p {
   margin: 0 0 24px; 
   text-align: justify; 
   text-justify: inter-word;
+  justify-content: center;
 }
 
 .styled-table {
@@ -27,32 +28,39 @@ p {
     font-family: sans-serif;
     min-width: 400px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    justify-content: center;
 }
 
 .styled-table thead tr {
     background-color: #009879;
     color: #ffffff;
     text-align: left;
+    justify-content: center;
 }
 
 .styled-table th,
 .styled-table td {
     padding: 12px 15px;
+    justify-content: center;
 }
 
 .styled-table tbody tr {
     border-bottom: 1px solid #dddddd;
+    justify-content: center;
 }
 
 .styled-table tbody tr:nth-of-type(even) {
     background-color: #f3f3f3;
+    justify-content: center;
 }
 
 .styled-table tbody tr:last-of-type {
     border-bottom: 2px solid #009879;
+    justify-content: center;
 }
 
 .styled-table tbody tr.active-row {
     font-weight: bold;
     color: #009879;
+    justify-content: center;
 }
