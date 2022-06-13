@@ -3,44 +3,28 @@
 	<head>
 		<title>Education</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<script type="text/javascript" src="index.js"></script>
 	</head>
 <body>
 
 <div id="demo">
-	<button type="button" onclick="loadJson()">Get Data</button>
-	<button type="button" onclick="clearAction()">Clear</button>
+	<button type="button" onclick="loadJson()">Get Education Information</button>
+	<button type="button" onclick="clearAction()">Clear Data</button>
 	<br />
-	<p id="school"></p>
-	<p id="program"></p>
-	<p id="type"></p>
-	<p id="year"></p>
+	<table id="myTable" class="styled-table">
+	    <thead>
+	        <tr>
+	            <th>School</th>
+	            <th>Program/Major</th>
+	            <th>Type</th>
+	            <th>Year</th>
+	        </tr>
+	    </thead>
+	    <tbody>
+	        
+	    </tbody>
+	</table>
 </div>
 
-<script>
-	function loadJson(){
-		let response = fetch("./test.json")
-		.then(response => {
-			console.log(response);
-			if(response.status == 200)
-			{
-				return response.json();
-			}
-		})
-		.then(jsondata => {
-			console.log(jsondata);
-			document.getElementById("school").innerHTML = "School : " + jsondata["School"];
-			document.getElementById("program").innerHTML = "Program/Major : " + jsondata["Program"];
-			document.getElementById("type").innerHTML = "Type : " + jsondata["Type"];
-			document.getElementById("year").innerHTML = "Year : " + jsondata["Year"];
-		});
-	}
-
-	function clearAction(){
-		document.getElementById("school").innerHTML = "";
-		document.getElementById("program").innerHTML = "";
-		document.getElementById("type").innerHTML = "";
-		document.getElementById("year").innerHTML = "";
-	}
-</script>
 </body>
 </html>
