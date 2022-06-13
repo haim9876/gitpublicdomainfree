@@ -1,8 +1,3 @@
-.center {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 button {
   background-color: #4CAF50; /* Green */
   border: none;
@@ -12,6 +7,8 @@ button {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 p {
