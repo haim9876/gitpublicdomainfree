@@ -10,9 +10,8 @@ button {
 }
 
 #demo{
-  /*margin: 25px auto;*/
-  /*padding: 2rem;*/
-  justify-content: center;
+  margin: 25px auto;
+  padding: 2rem;
 }
 
 button:hover,
