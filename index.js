@@ -11,9 +11,10 @@ function loadJson(){
     })
     .then(jsondata => {
         console.log(jsondata);
-        if(count == 0) {
+        if(count == 0)
+        {
 	        count = jsondata.length
-	        for(let i = 0; i < count; i++) {
+	        for(let i = 0; i < count; i++){
 				var table = document.getElementById("myTable");
 				var row = table.insertRow(i + 1);
 				var cel1 = row.insertCell(0);
@@ -30,7 +31,7 @@ function loadJson(){
 }
 
 function clearAction(){
-    for(let i = 0; i < count; i++) {
+    for(let i = 0; i < count; i++){
     	document.getElementById("myTable").deleteRow(1);
     }
     count = 0;

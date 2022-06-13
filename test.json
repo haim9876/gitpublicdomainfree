@@ -1,12 +1,12 @@
 [{
 	"School": "College",
-	"Program": "Engineering",
+	"Program": "Computer Science",
 	"Type": "BS",
 	"Year": 2020
 }, 
 {
 	"School": "Graduate School",
-	"Program": "Systems Engineering",
+	"Program": "Software Development",
 	"Type": "MS",
 	"Year": 2022
 }]
